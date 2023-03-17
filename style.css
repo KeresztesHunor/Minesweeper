@@ -1,0 +1,117 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Press-start";
+  background-color: bisque;
+}
+
+main {
+  width: 100%;
+  margin: auto;
+}
+
+article {
+  text-align: center;
+}
+
+#minesweeper {
+  display: inline-block;
+  padding: 5px;
+  background-color: hsl(0, 0%, 50%);
+  border: 3px outset hsl(0, 0%, 75%);
+}
+
+#statsBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#playingField {
+  margin-top: 5px;
+  position: relative;
+  border: 3px inset hsl(0, 0%, 75%);
+}
+
+#playingField > div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: grid;
+}
+
+#playingField > div > div {
+  width: 25px;
+  height: 25px;
+}
+
+#background > div {
+  background-color: hsl(0, 0%, 75%);
+  border: 1px solid hsl(0, 0%, 50%);
+}
+
+#valueFields > div {
+  text-align: center;
+  font-size: 17.5px;
+  line-height: 25px;
+}
+
+#covers > div {
+  text-align: center;
+  background-color: hsl(0, 0%, 50%);
+  border: 3px outset hsl(0, 0%, 75%);
+  color: red;
+}
+
+.hiddenField {
+  opacity: 0;
+}
+
+.flagged {
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  color: red;
+}
+
+.bomb {
+  line-height: normal !important;
+  color: black;
+}
+
+.one {
+  color: rgb(0, 0, 255);
+}
+
+.two {
+  color: rgb(0, 127, 0);
+}
+
+.three {
+  color: rgb(255, 0, 0);
+}
+
+.four {
+  color: rgb(0, 0, 127);
+}
+
+.five {
+  color: rgb(127, 0, 0);
+}
+
+.six {
+  color: rgb(0, 127, 127);
+}
+
+.seven {
+  color: rgb(0, 0, 0);
+}
+
+.eight {
+  color: rgb(127, 127, 127);
+}
+
+@font-face {
+  font-family: "Press-start";
+  src: url("fonts/PressStart2P-Regular.ttf");
+}
